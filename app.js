@@ -21,10 +21,10 @@ let posts = [];
 app.get("/", function(req, res) {
   res.render("home.ejs", { homeContent: posts });
 
-  for(var i = 0; i<posts.length; i++) {
-    console.log(posts[i].title)
-    
-  }
+  posts.forEach(function(element) {
+    console.log(element.title);
+  });
+  
 });
 
 
