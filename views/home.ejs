@@ -1,0 +1,9 @@
+<%- include("partials/header") -%>
+
+
+<% for(var i = 0; i<homeContent.length; i++) { %>
+  <h1> <%= homeContent[i].title %> </h1>
+  <p> <%= homeContent[i].content %> </p>
+<% }; %>
+
+<%- include("partials/footer") -%>
